@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar1;
+@property (weak, nonatomic) IBOutlet UIButton *btn1;
+- (IBAction)btn1:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navi;
 
 @end
 
@@ -26,4 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btn1:(UIButton *)sender {
+    
+    // 表示状態を反転
+    _toolbar1.hidden = !_toolbar1.hidden;
+    
+}
 @end
